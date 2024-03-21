@@ -7,7 +7,10 @@ destination:
   type: timeseries
 ignoreNullFields: true
 shared: true
-action: update
+action: upsert
+schedule:
+  interval: 0 * * * *
+  isPaused: false
 dataSetExternalId: uc:001:oee:ds
 # Specify credentials separately like this:
 # authentication:
