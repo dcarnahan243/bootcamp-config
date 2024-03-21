@@ -5,13 +5,13 @@ name: ts_assets_mapping
 query:
     file: transformation.sql
 destination:
-  type: timeseries
+    type: timeseries
 ignoreNullFields: true
 shared: true
 action: upsert
 schedule:
-  interval: 0 * * * *
-  isPaused: false
+    interval: 0 * * * *
+    isPaused: false
 dataSetExternalId: uc:001:oee:ds
 # Specify credentials separately like this:
 # authentication:
